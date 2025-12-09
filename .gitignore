@@ -1,0 +1,26 @@
+venv/
+.venv/
+ENV/
+env/
+.env/
+
+# Python cache and bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor & OS files
+.vscode/
+.DS_Store
+
+# Distribution / build files
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log

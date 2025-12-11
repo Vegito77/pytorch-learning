@@ -1,9 +1,11 @@
+# %%
 import torch
 
 # Detect GPU (MPS for Apple Silicon)
 device = "mps" if torch.backends.mps.is_available() else "cpu"
 print("Using device:", device)
 
+# %%
 # -----------------------
 # Task 1: Create tensors
 # -----------------------
@@ -15,6 +17,7 @@ print("Tensor A:", A)
 print("Tensor B:", B)
 print("Tensor C:", C)
 
+# %%
 # -----------------------
 # Task 2: Basic operations
 # -----------------------
@@ -27,6 +30,7 @@ print("Tensor E (C * A):", E)
 F = C * C
 print("Tensor F (C * C):", F)
 
+# %%
 # -----------------------
 # Task 3: Reshaping
 # -----------------------
@@ -37,6 +41,7 @@ print("Reshaped G (3,4):\n", G.reshape(3, 4))
 print("Reshaped G (4,3):\n", G.reshape(4, 3))
 print("Flattened G:", G.flatten())
 
+# %%
 # -----------------------
 # Task 4: Indexing
 # -----------------------
@@ -47,6 +52,7 @@ print("\nFirst row of Tensor H:", H[0,:])
 print("\nLast column of Tensor H:", H[:,-1])
 print("\nA sub matrix of H:", H[0:2,0:2])
 
+# %%
 # -----------------------
 # Optional Task : test GPU
 # -----------------------

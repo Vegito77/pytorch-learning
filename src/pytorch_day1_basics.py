@@ -38,7 +38,17 @@ print("Reshaped G (4,3):\n", G.reshape(4, 3))
 print("Flattened G:", G.flatten())
 
 # -----------------------
-# Optional Task 4: test GPU
+# Task 4: Indexing
+# -----------------------
+
+H = torch.arange(12, device=device).reshape(3, 4)
+print("\nTensor H:", H)
+print("\nFirst row of Tensor H:", H[0,:])
+print("\nLast column of Tensor H:", H[:,-1])
+print("\nA sub matrix of H:", H[0:2,0:2])
+
+# -----------------------
+# Optional Task : test GPU
 # -----------------------
 if device == "mps":
     X = torch.ones((2,2), device=device)
